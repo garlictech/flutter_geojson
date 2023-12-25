@@ -2,14 +2,18 @@ name: geojson
 description: Utilities to work with geojson data. Parser with a reactive api,
   search and geofencing
 homepage: https://github.com/synw/geojson
-version: 1.0.0
+version: 1.0.1
+publish_to: 'none'
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
-  geodesy: ^0.4.0-nullsafety.0
-  geopoint: ^1.0.0
+  geodesy: ^0.10.2
+  geopoint:
+    git:
+      url: https://github.com/garlictech/flutter_geopoint
+      ref: master
   iso: ^1.0.0
   pedantic: ^1.11.1
 
